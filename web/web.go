@@ -23,6 +23,9 @@ func Host() {
 	// Endpoints
 	r.GET("/all", getAllPokemons)
 
+	// Pokemon sprites
+	r.Static("/sprt/", "./assets/sprites")
+
 	gin.SetMode(gin.DebugMode)
 	err := r.Run(":8080")
 	if err != nil {

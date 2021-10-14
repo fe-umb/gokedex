@@ -61,3 +61,28 @@ a, a.nav-link, a.dropdown-item{
     border-color: #fbf4e9;
     box-shadow: 0 0 0 0.25rem rgb(255 110 90 / 10%);
 }
+
+.pokemonTitle {
+    text-align: center;
+    letter-spacing: 0.30px;
+    font-weight: 600;
+}
+
+.pokemonDescription {
+    text-align: center;
+    letter-spacing: 0.30px;
+}
+
+.pokemonStatus {
+    padding-left: 1rem;
+}
+
+.divStatus {
+    display: flex;
+    justify-content: space-around;
+}
+
+.imgPokemon {
+    max-width: 25%;
+    align-self: center;
+}
