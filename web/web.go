@@ -11,13 +11,20 @@ import (
 // Host function serves API endpoints and pages
 func Host() {
 	r := gin.Default()
-	r.LoadHTMLGlob("./pages/index.html")
-	gin.SetMode(gin.DebugMode)
+	r.LoadHTMLGlob("./pages/html/*")
 
+	// CSS/JS
+	r.Static("/css", "./pages/css")
+	r.Static("/js", "./pages/js")
+
+	// Pages
 	r.GET("/", home)
-	r.GET("/all", getAllPokemons)
-	err := r.Run(":8080")
 
+	// Endpoints
+	r.GET("/all", getAllPokemons)
+
+	gin.SetMode(gin.DebugMode)
+	err := r.Run(":8080")
 	if err != nil {
 		fmt.Println(err.Error())
 	}
