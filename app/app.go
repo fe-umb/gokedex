@@ -1,13 +1,29 @@
 package app
 
-import "os"
+import (
+	"encoding/json"
+	"io/ioutil"
+	"os"
 
-func ReadJSON(filename string) (*os.File, error) {
+	"github.com/fe-umb/gokedex/models"
+)
+
+func ReadJSON(filename string) (models.Pokemon, error) {
+
+	var pkList models.Pokemon
+
 	jsonFile, err := os.Open(filename)
-
 	if err != nil {
-		return nil, err
+		return pkList, err
+	}
+	defer jsonFile.Close()
+
+	byteV, err := ioutil.ReadAll(jsonFile)
+	if err != nil {
+		return pkList, err
 	}
 
-	return jsonFile, nil
+	json.Unmarshal(byteV, &pkList)
+
+	return pkList, nil
 }
