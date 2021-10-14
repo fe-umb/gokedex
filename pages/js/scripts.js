@@ -2,7 +2,6 @@ function makeRequest(url) {
     return new Promise(function (resolve, reject) {
         var xhr = new XMLHttpRequest();
         xhr.open("GET", url);
-        xhr.setRequestHeader("Content-Type", "application/json")
         xhr.addEventListener('readystatechange', function () {
             if (this.readyState == 4) {
                 if (this.status == 200) {
@@ -16,7 +15,7 @@ function makeRequest(url) {
     });
 }
 
-makeRequest("localhost:8080/all")
+makeRequest("/all")
     .then(
         function (data) {
             addAllPokemons(data);
@@ -48,6 +47,7 @@ function addAllPokemons(data) {
 }
 
 function getPokemonSprite(idPokemon) {
+    idPokemon = idPokemon.toString()
     var idReturn = "";
 
     if (idPokemon.length == 1) {

@@ -86,3 +86,9 @@ a, a.nav-link, a.dropdown-item{
     max-width: 25%;
     align-self: center;
 }
+
+#cardHolder{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;    
+}
