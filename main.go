@@ -1,7 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"github.com/fe-umb/gokedex/web"
+)
 
 func main() {
-	fmt.Println(`Hello, world!`)
+	web.Host()
 }
