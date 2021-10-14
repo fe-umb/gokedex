@@ -34,7 +34,7 @@ function addAllPokemons(data) {
             </div>
             <img src="/sprt/`+ getPokemonSprite(ele.id) + `MS.png" class="card-img imgPokemon">
             <div class="card-body">
-                <p class="card-text pokemonDescription">Type:</p>
+                <p class="card-text pokemonDescription">Type: `+ ele.type +` </p>
                 <div class="divStatus">
                     <p class="pokemonStatus">HP: `+ ele.base.HP + `</p>
                     <p class="pokemonStatus">Attack:`+ ele.base.Attack + `</p>

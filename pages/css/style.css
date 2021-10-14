@@ -5,8 +5,14 @@
     Orange: #ff6e5a
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 body{
     background-color: #FBF4E9;
+}
+
+#main{
+    max-width: 82%;
 }
 
 .dropdown-menu{
@@ -65,16 +71,21 @@ a, a.nav-link, a.dropdown-item{
 .pokemonTitle {
     text-align: center;
     letter-spacing: 0.30px;
+    font-family: 'Poppins', sans-serif;
     font-weight: 600;
 }
 
 .pokemonDescription {
     text-align: center;
     letter-spacing: 0.30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.89rem;
 }
 
 .pokemonStatus {
-    padding-left: 1rem;
+    padding-left: 0.3rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.7rem;
 }
 
 .divStatus {
