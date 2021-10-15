@@ -36,7 +36,8 @@ nav.navbar{
 .card{
     border: 1px solid rgb(255 110 90 / 25%);
     max-width: 20rem;
-    margin-bottom: 0.5rem;
+    width: 19%;
+    margin: 0.2rem 0.25rem 0.5rem 0.25rem;
 }
 
 .card-header{
@@ -83,9 +84,25 @@ a, a.nav-link, a.dropdown-item{
 }
 
 .pokemonStatus {
-    padding-left: 0.3rem;
     font-family: 'Poppins', sans-serif;
-    font-size: 0.7rem;
+}
+
+.pokemonType{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.typeBox{
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 0.01rem 0.7rem 0.01rem 0.7em;
+    color: #fff;
+    font-variant: all-petite-caps;
+    font-weight: bold;
+}
+
+.pokemonStatus svg{
+    margin-right: 0.25rem;
 }
 
 .divStatus {
