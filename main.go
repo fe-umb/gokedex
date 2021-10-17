@@ -1,9 +1,10 @@
 package main
 
 import (
-	"github.com/fe-umb/gokedex/web"
+	"github.com/fe-umb/gokedex/app"
 )
 
 func main() {
-	web.Host()
+	ctx := app.NewAppCtx()
+	ctx.Host()
 }

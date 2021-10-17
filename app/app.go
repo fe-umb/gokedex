@@ -8,6 +8,30 @@ import (
 	"github.com/fe-umb/gokedex/models"
 )
 
+type App struct {
+	Port string
+	Env  string
+}
+
+func NewAppCtx() App {
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = "8080"
+	}
+
+	env := os.Getenv("GIN_ENV")
+	if env != "release" {
+		env = "debug"
+	}
+
+	var ctx = App{
+		Port: port,
+		Env:  env,
+	}
+
+	return ctx
+}
+
 func ReadJSON(filename string) (models.Pokemon, error) {
 
 	var pkList models.Pokemon

@@ -1,0 +1,1 @@
+gokedex: bin/gokedex
