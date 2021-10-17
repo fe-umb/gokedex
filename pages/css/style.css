@@ -122,10 +122,43 @@ a, a.nav-link, a.dropdown-item{
         justify-content: space-between;    
 }
 
-.imgPokemon:hover {
+.imgPokemon:hover, .imgPokemon:focus {
     max-width: calc(25% + 2px);
 }
 
 .imgHover{
     text-align: center;
+}
+
+@media (max-width: 1024px) {
+    .card{
+        width: 30%;
+    }
+
+    .imgPokemon {
+        max-width: 30%;
+        align-self: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .card{
+        width: 31%;
+    }
+
+    .imgPokemon {
+        max-width: 40%;
+        align-self: center;
+    }
+}
+
+@media (max-width: 425px) {
+    .card{
+        width: 100%;
+    }
+
+    .imgPokemon {
+        max-width: 40%;
+        align-self: center;
+    }
 }
