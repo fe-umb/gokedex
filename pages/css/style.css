@@ -120,3 +120,7 @@ a, a.nav-link, a.dropdown-item{
         flex-wrap: wrap;
         justify-content: space-between;    
 }
+
+.imgPokemon:hover {
+    max-width: calc(25% + 2px);
+}
