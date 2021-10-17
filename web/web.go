@@ -73,6 +73,8 @@ func getAllPokemons(ctx *gin.Context) {
 
 func getPokemon(ctx *gin.Context) {
 	idPokemon, err := strconv.Atoi(ctx.Param("id"))
+	foundPokemon := false
+
 	if err != nil {
 		ctx.JSON(http.StatusNotFound, err.Error())
 	}
@@ -85,9 +87,12 @@ func getPokemon(ctx *gin.Context) {
 	for _, ele := range returnJSON {
 		if ele.ID == idPokemon {
 			ctx.JSON(http.StatusOK, ele)
+			foundPokemon = true
 		}
 	}
 
-	ctx.JSON(http.StatusNotFound, "Pokémon not found.")
+	if !foundPokemon {
+		ctx.JSON(http.StatusNotFound, "Pokémon not found.")
+	}
 
 }

@@ -1,5 +1,6 @@
 .infoPokemonImage{
     text-align: center;
+    padding-bottom: 20px;
 }
 
 .pokemonTitle{
@@ -12,4 +13,22 @@
 .detail{
     display: flex;
     justify-content: center;
+}
+
+.card {
+    max-width: 50rem;
+    width: 45%;
+}
+
+.table{
+    text-align: center;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+td.pokemonStatus{
+    font-weight: 600;
+}
+
+tbody tr:nth-child(even) {
+    background: #fce9ca;
 }
