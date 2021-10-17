@@ -1,6 +1,33 @@
 {{ template "header.html" .}}
+<link rel="stylesheet" href="/css/info.css">
+
 <body>
     {{ template "navbar.html" .}}
-    
+    <div id="main" class="container-fluid">
+        <div class="row">
+            <div class="col-xs col-sm col-md col-lg col-xl">
+                <p class="pokemonTitle" id="titlePokemon">Bulbassaur - #1</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs col-sm col-md col-lg col-xl">
+                <div class="infoPokemonImage">
+                    <img src="/imgs/001.png" class="imgPokemon" id="imgPokemon"></img>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs col-sm col-md col-lg col-xl">
+                <div class="card">
+                    <div class="card-body">
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
 </body>
 {{ template "footer.html" .}}

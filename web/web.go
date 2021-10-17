@@ -29,6 +29,9 @@ func Host() {
 	// Pokemon sprites
 	r.Static("/sprt/", "./assets/sprites")
 
+	// Pokemon images
+	r.Static("/imgs/", "./assets/images")
+
 	gin.SetMode(gin.DebugMode)
 	err := r.Run(":8080")
 	if err != nil {

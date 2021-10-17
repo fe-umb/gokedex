@@ -1,0 +1,10 @@
+.infoPokemonImage{
+    text-align: center;
+}
+
+.pokemonTitle{
+    text-align: center;
+    font-size: 30px !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.4px;
+}
