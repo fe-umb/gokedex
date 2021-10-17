@@ -90,6 +90,7 @@ a, a.nav-link, a.dropdown-item{
 .pokemonType{
     display: flex;
     justify-content: space-evenly;
+    margin-bottom: 0.4rem;
 }
 
 .typeBox{
@@ -123,4 +124,8 @@ a, a.nav-link, a.dropdown-item{
 
 .imgPokemon:hover {
     max-width: calc(25% + 2px);
+}
+
+.imgHover{
+    text-align: center;
 }

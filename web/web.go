@@ -20,7 +20,7 @@ func Host() {
 
 	// Pages
 	r.GET("/", home)
-	r.GET("/pokemoninfo/:id", pokemonInfo)
+	r.GET("/info/:id", pokemonInfo)
 
 	// Endpoints
 	r.GET("/all", getAllPokemons)
@@ -51,7 +51,7 @@ func pokemonInfo(ctx *gin.Context) {
 	title := fmt.Sprintf(`Gokédex • Pokémon #%s`, ctx.Param("id"))
 	ctx.HTML(
 		http.StatusOK,
-		"pokemonInfo.html",
+		"info.html",
 		gin.H{
 			"title": title,
 		},

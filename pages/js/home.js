@@ -32,7 +32,7 @@ function addAllPokemons(data) {
                     `+ ele.name.english + ` - #` + ele.id + `
                 </p>
             </div>
-            <a href="/pokemoninfo/`+ (ele.id) + `" style="text-align: center" target="_blank">
+            <a class="imgHover" href="/info/`+ (ele.id) + `" target="_blank">
             <img src="/sprt/`+ getPokemonSprite(ele.id) + `MS.png" class="card-img imgPokemon">
             </a>
             <div class="card-body">
