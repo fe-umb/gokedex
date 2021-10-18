@@ -1,1 +1,1 @@
-web: gokedex
+web: bin/gokedex
