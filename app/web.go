@@ -27,10 +27,10 @@ func (app *App) Host() {
 	r.GET("/pokemon/:id", getPokemon)
 
 	// Pokemon sprites
-	r.Static("/sprt/", "./assets/sprites")
+	r.Static("/sprt/", "./pkmn/sprites")
 
 	// Pokemon images
-	r.Static("/imgs/", "./assets/images")
+	r.Static("/imgs/", "./pkmn/images")
 
 	gin.SetMode(app.Env)
 	err := r.Run(":" + app.Port)
@@ -62,7 +62,7 @@ func pokemonInfo(ctx *gin.Context) {
 }
 
 func getAllPokemons(ctx *gin.Context) {
-	returnJSON, err := ReadJSON("./assets/pokedex.json")
+	returnJSON, err := ReadJSON("./pkmn/pokedex.json")
 
 	if err != nil {
 		ctx.JSON(http.StatusNotFound, err.Error())
@@ -79,7 +79,7 @@ func getPokemon(ctx *gin.Context) {
 		ctx.JSON(http.StatusNotFound, err.Error())
 	}
 
-	returnJSON, err := ReadJSON("./assets/pokedex.json")
+	returnJSON, err := ReadJSON("./pkmn/pokedex.json")
 	if err != nil {
 		ctx.JSON(http.StatusNotFound, err.Error())
 	}
