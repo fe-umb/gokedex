@@ -37,16 +37,52 @@ tbody tr:nth-child(even) {
     .card{
         width: 70%;
     }
+
+    .navbar-toggler{
+        visibility: hidden;
+    }
 }
 
 @media (max-width: 768px) {
     .card{
         width: 80%;
     }
+
+    .navbar-toggler{
+        visibility: hidden;
+    }
+
+    .collapse:not(.show) {
+        display: block;
+    }
+
+    a#homeText {
+        color: #FBF4E9;
+    }
+
+    td.pokemonStatus {
+        text-align: left;
+    }
 }
 
 @media (max-width: 425px) {
     .card{
         width: 100%;
+    }
+
+    .navbar-toggler{
+        visibility: hidden;
+    }
+
+    .collapse:not(.show) {
+        display: block;
+    }
+
+    a#homeText {
+        color: #FBF4E9;
+    }
+    
+    td.pokemonStatus {
+        text-align: left;
     }
 }

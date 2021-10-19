@@ -150,6 +150,10 @@ a, a.nav-link, a.dropdown-item{
         max-width: 40%;
         align-self: center;
     }
+
+    .navbar-toggler{
+        visibility: hidden;
+    }
 }
 
 @media (max-width: 425px) {
@@ -160,6 +164,10 @@ a, a.nav-link, a.dropdown-item{
     .imgPokemon {
         max-width: 40%;
         align-self: center;
+    }
+
+    .navbar-toggler{
+        visibility: hidden;
     }
 }
 
