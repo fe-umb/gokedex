@@ -162,3 +162,13 @@ a, a.nav-link, a.dropdown-item{
         align-self: center;
     }
 }
+
+.footer-dark{
+    background-color: #333333;
+}
+
+a.credit, a.credit:hover,
+a.credit:focus, a.credit:active{
+    text-decoration: none;
+    color: #ff6e5a;
+}
