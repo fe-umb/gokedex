@@ -18237,5 +18237,168 @@
       "Sp. Defense": 95,
       "Speed": 130
     }
+  },
+  {
+    "id": 891,
+    "name": {
+      "english": "Kubfu",
+      "japanese": "ダクマ",
+      "chinese": "熊徒弟",
+      "french": "Wushours"
+    },
+    "type": [
+      "Fighting"
+    ],
+    "base": {
+      "HP": 60,
+      "Attack": 90,
+      "Defense": 60,
+      "Sp. Attack": 53,
+      "Sp. Defense": 50,
+      "Speed": 72
+    }
+  },
+  {
+    "id": 892,
+    "name": {
+      "english": "Urshifu",
+      "japanese": "ウーラオス",
+      "chinese": "武道熊師",
+      "french": "Shifours"
+    },
+    "type": [
+      "Fighting",
+      "Dark"
+    ],
+    "base": {
+      "HP": 100,
+      "Attack": 130,
+      "Defense": 100,
+      "Sp. Attack": 63,
+      "Sp. Defense": 60,
+      "Speed": 97
+    }
+  },
+  {
+    "id": 893,
+    "name": {
+      "english": "Zarude",
+      "japanese": "ザルード",
+      "chinese": "薩戮德",
+      "french": "Zarude"
+    },
+    "type": [
+      "Dark",
+      "Grass"
+    ],
+    "base": {
+      "HP": 105,
+      "Attack": 120,
+      "Defense": 105,
+      "Sp. Attack": 70,
+      "Sp. Defense": 95,
+      "Speed": 105
+    }
+  },
+  {
+    "id": 894,
+    "name": {
+      "english": "Regieleki",
+      "japanese": "レジエレキ",
+      "chinese": "雷吉艾勒奇",
+      "french": "Regieleki"
+    },
+    "type": [
+      "Electric"
+    ],
+    "base": {
+      "HP": 80,
+      "Attack": 100,
+      "Defense": 50,
+      "Sp. Attack": 100,
+      "Sp. Defense": 50,
+      "Speed": 200
+    }
+  },
+  {
+    "id": 895,
+    "name": {
+      "english": "Regidrago",
+      "japanese": "レジドラゴ",
+      "chinese": "雷吉鐸拉戈",
+      "french": "Regidrago"
+    },
+    "type": [
+      "Dragon"
+    ],
+    "base": {
+      "HP": 200,
+      "Attack": 100,
+      "Defense": 50,
+      "Sp. Attack": 100,
+      "Sp. Defense": 50,
+      "Speed": 80
+    }
+  },
+  {
+    "id": 896,
+    "name": {
+      "english": "Glastrier",
+      "japanese": "ブリザポス",
+      "chinese": "雪暴馬",
+      "french": "Blizzeval"
+    },
+    "type": [
+      "Ice"
+    ],
+    "base": {
+      "HP": 100,
+      "Attack": 145,
+      "Defense": 130,
+      "Sp. Attack": 65,
+      "Sp. Defense": 110,
+      "Speed": 30
+    }
+  },
+  {
+    "id": 897,
+    "name": {
+      "english": "Spectrier",
+      "japanese": "レイスポス",
+      "chinese": "靈幽馬",
+      "french": "Spectreval"
+    },
+    "type": [
+      "Ghost"
+    ],
+    "base": {
+      "HP": 100,
+      "Attack": 65,
+      "Defense": 60,
+      "Sp. Attack": 145,
+      "Sp. Defense": 80,
+      "Speed": 130
+    }
+  },
+  {
+    "id": 898,
+    "name": {
+      "english": "Calyrex",
+      "japanese": "バドレックス",
+      "chinese": "蕾冠王",
+      "french": "Sylveroy"
+    },
+    "type": [
+      "Psychic",
+      "Grass"
+    ],
+    "base": {
+      "HP": 100,
+      "Attack": 80,
+      "Defense": 80,
+      "Sp. Attack": 80,
+      "Sp. Defense": 80,
+      "Speed": 80
+    }
   }
 ]
