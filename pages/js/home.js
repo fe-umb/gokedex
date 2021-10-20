@@ -3,13 +3,15 @@ makeRequest("/all")
         function (data) {
             addAllPokemons(data);
         }
-);
+    );
+
+FilterPokemon();
 
 function addAllPokemons(data) {
     var elemento = "";
     var role = document.querySelector("#cardHolder");
     data.forEach(ele => {
-        elemento += `<div class="card" data-name="`+ ele.name.english +`">
+        elemento += `<div class="card" data-name="` + ele.name.english + `">
             <div class="card-header pokemonTitle">
                 <p>
                     `+ ele.name.english + ` - #` + ele.id + `
@@ -33,21 +35,27 @@ function addAllPokemons(data) {
     role.innerHTML = elemento;
 }
 
-function FilterPokemon(){
+function FilterPokemon() {
     var searchBox = document.querySelector("#searchBox");
-    searchBox.addEventListener('keyup', function(e){
+    searchBox.addEventListener('keyup', function () {
+        var text = this.value;
         var allCards = document.querySelectorAll("[data-name]");
 
-        allCards.forEach(ele =>{
-            
+        allCards.forEach(ele => {
+            if (ele.getAttribute("data-name").toLowerCase().includes(text.toLowerCase())) {
+                ShowPokemon(ele);
+            }
+            else {
+                HidePokemon(ele);
+            }
         })
     });
 }
 
-function ShowPokemon(element){
-    element.display = "none";
+function ShowPokemon(element) {
+    element.style.display = "flex";
 }
 
-function HidePokemon(element){
-    element.display = "flex";
+function HidePokemon(element) {
+    element.style.display = "none";
 }
