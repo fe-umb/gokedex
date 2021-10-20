@@ -180,3 +180,19 @@ a.credit:focus, a.credit:active{
     text-decoration: none;
     color: #ff6e5a;
 }
+
+input#searchBox {
+    margin-left: 4px;
+    border: 1px solid rgb(255 110 90 / 25%);
+    font-size: 14px;
+    border-radius: 15px;
+    text-align: center;
+    background-color: white;
+    height: 50px;
+    max-height: 50px;
+    margin-bottom: 4px;
+}
+
+input#searchBox:focus-visible {
+    background-color: whitesmoke;
+}

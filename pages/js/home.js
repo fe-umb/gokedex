@@ -9,7 +9,7 @@ function addAllPokemons(data) {
     var elemento = "";
     var role = document.querySelector("#cardHolder");
     data.forEach(ele => {
-        elemento += `<div class="card">
+        elemento += `<div class="card" data-name="`+ ele.name.english +`">
             <div class="card-header pokemonTitle">
                 <p>
                     `+ ele.name.english + ` - #` + ele.id + `
@@ -31,4 +31,23 @@ function addAllPokemons(data) {
         </div>`;
     });
     role.innerHTML = elemento;
+}
+
+function FilterPokemon(){
+    var searchBox = document.querySelector("#searchBox");
+    searchBox.addEventListener('keyup', function(e){
+        var allCards = document.querySelectorAll("[data-name]");
+
+        allCards.forEach(ele =>{
+            
+        })
+    });
+}
+
+function ShowPokemon(element){
+    element.display = "none";
+}
+
+function HidePokemon(element){
+    element.display = "flex";
 }
