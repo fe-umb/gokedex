@@ -130,12 +130,6 @@ a, a.nav-link, a.dropdown-item{
     text-align: center;
 }
 
-footer{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-
 @media (max-width: 1024px) {
     .card{
         width: 30%;

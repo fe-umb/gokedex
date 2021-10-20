@@ -63,6 +63,10 @@ tbody tr:nth-child(even) {
     td.pokemonStatus {
         text-align: left;
     }
+
+    .nav-credit{
+        display: none;
+    }
 }
 
 @media (max-width: 425px) {
@@ -84,5 +88,9 @@ tbody tr:nth-child(even) {
     
     td.pokemonStatus {
         text-align: left;
+    }
+
+    .nav-credit{
+        display: none;
     }
 }
